@@ -149,18 +149,10 @@ body{
     }
 
     &__slide-btn{
-        display: inline-block;
-        padding: 10px;
-        border: 1px solid #c2c2c2;
-        color: #000;
-        font-size: 12px;
         margin-top: 27px;
-        @include transitionAll(.4s);
-        &:hover{
-            background-color: #000;
-            color: #c2c2c2;
-        }
     }
+
+   
 }
 
 .recipies{
@@ -179,8 +171,73 @@ body{
         width: 100%;
         font-size: 18px;
         margin: 15px 0 13px 0;
+        color: #000;
+
+    }
+}
+
+.recipie-big{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    &__content{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    &__img{
+        flex: 0 0 50%;
+    }
+    &__content-text{
+        background-color: #fff;
+        padding: 30px 35px;
+        flex: 0 0 50%;
+    }
+    &__title{
+        color: $dark-green;
+        font-size: 32px;
+    }
+
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0;
     }
     
+    &__info-text{
+        color: #555;
+       img{
+           margin-bottom: -2px;
+       }
+    }
+
+    &__text{
+        max-height: 258px;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    &__text-bold{
+        font-weight: 800;
+        margin-top: 26px;
+        margin-bottom: 26px;
+        font-family: $playfair-font;
+    }
+
+}
+
+
+.light-btn{
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #c2c2c2;
+    color: #000;
+    font-size: 12px;
+    @include transitionAll(.4s);
+    &:hover{
+        background-color: #000;
+        color: #c2c2c2;
+    }
 }
 
 .slick-dots{
